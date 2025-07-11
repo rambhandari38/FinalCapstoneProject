@@ -4,11 +4,7 @@ import axios from "axios";
 
 import Login from "./pages/login/Login";
 import SuperAdminDashboard from "./pages/superadmin/SuperAdminDashboard";
-import TeacherDashboard from "./pages/teacher/TeacherDashboard";
-import StudentDashboard from "./pages/student/StudentDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
-
-import AdminTest from "./pages/AdminTest";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -36,15 +32,6 @@ function App() {
       switch (user.role) {
         case "superadmin":
           navigate("/superadmin");
-          break;
-        case "admin":
-          navigate("/admin");
-          break;
-        case "teacher":
-          navigate("/teacher");
-          break;
-        case "student":
-          navigate("/student");
           break;
         default:
           navigate("/");
@@ -77,32 +64,6 @@ function App() {
         }
       />
 
-      <Route
-        path="/admin"
-        element={
-          <ProtectedRoute user={user} allowedRoles={["admin"]}>
-            <AdminTest user={user} logout={handleLogout} />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/teacher"
-        element={
-          <ProtectedRoute user={user} allowedRoles={["teacher"]}>
-            <TeacherDashboard user={user} logout={handleLogout} />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/student"
-        element={
-          <ProtectedRoute user={user} allowedRoles={["student"]}>
-            <StudentDashboard user={user} logout={handleLogout} />
-          </ProtectedRoute>
-        }
-      />
 
       <Route path="*" element={<Navigate to={`/${user.role}`} />} />
     </Routes>

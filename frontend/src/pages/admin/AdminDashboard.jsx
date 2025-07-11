@@ -1,5 +1,5 @@
 import React from "react";
-import Socket from "./Socket"; // ✅ adjust path if needed
+import Socket from "../Socket"; // ✅ adjust path if needed
 
 export default function AdminDashboard({ user, logout }) {
   return (
