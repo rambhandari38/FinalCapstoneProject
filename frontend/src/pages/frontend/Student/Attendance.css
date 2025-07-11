@@ -1,0 +1,109 @@
+.attendance-page {
+  background-color:  #f2f7fd;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 24px;
+  width: 440px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendance-rate {
+  color: #555;
+  font-weight: 500;
+}
+
+.status-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.status {
+  background-color: #eef2f5;
+  border-radius: 10px;
+  width: 30%;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.present {
+  color: #1faa00;
+}
+
+.late {
+  color: #ff9900;
+}
+
+.absent {
+  color: #d32f2f;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.records {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.record-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.status-pill.present {
+  background-color: #ccffe0;
+  color: #008000;
+}
+
+.status-pill.late {
+  background-color: #fff2cc;
+  color: #ff9900;
+}
+
+.status-pill.absent {
+  background-color: #ffd6d6;
+  color: #d32f2f;
+}

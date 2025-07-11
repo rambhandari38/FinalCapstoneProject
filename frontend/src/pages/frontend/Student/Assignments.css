@@ -1,0 +1,152 @@
+.assignments-page {
+  background-color: #f2f7fd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.assignments-container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.assignments-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.assignment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c4f0ff;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.assignment-info p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.assignment-actions {
+  text-align: right;
+}
+
+.due-date {
+  color: rgb(8, 200, 81);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.submit-btn {
+  padding: 6px 14px;
+  background-color: #3f00ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-tag.pending {
+  background-color: #ffe6e6;
+  color: #d60000;
+}
+
+.status-tag.submitted {
+  background-color: #d9f7d9;
+  color: #228b22;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+}
+
+.modal-input,
+.modal-textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-textarea {
+  min-height: 80px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background: #ccc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal .submit-btn {
+  background: #3f00ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}

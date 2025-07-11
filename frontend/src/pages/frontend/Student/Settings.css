@@ -1,0 +1,112 @@
+.settings-page {
+  background-color: #f2f7fd;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.3s;
+}
+
+.settings-page.dark {
+  background-color: #1c1f26;
+  color: #f5f5f5;
+}
+
+.settings-container {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-page.dark .settings-container {
+  background-color: #2c2f36;
+}
+
+.settings-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.settings-section {
+  margin-bottom: 2.5rem;
+}
+
+.settings-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.settings-page.dark .settings-section h3 {
+  color: #ddd;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.settings-item label {
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.settings-item input[type="text"],
+.settings-item input[type="email"] {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.settings-page.dark input[type="text"],
+.settings-page.dark input[type="email"] {
+  background-color: #3a3f47;
+  color: #fff;
+  border-color: #555;
+}
+
+.toggle input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.save-btn,
+.secondary-btn,
+.delete-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-btn {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.save-btn:hover {
+  background-color: #1666c1;
+}
+
+.secondary-btn {
+  background-color: #f0f0f0;
+}
+
+.secondary-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

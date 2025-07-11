@@ -1,0 +1,31 @@
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root container as a flex column */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content should grow to fill space */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}

@@ -1,0 +1,68 @@
+/* Assuming your Login component is wrapped inside a container div */
+/* To override your inline styles, add !important where needed */
+
+div {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb !important;
+  box-shadow: 0 8px 24px rgb(149 157 165 / 20%) !important;
+  transition: box-shadow 0.3s ease;
+}
+
+div:hover {
+  box-shadow: 0 12px 36px rgb(149 157 165 / 30%);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6; /* Blue */
+  outline: none;
+  box-shadow: 0 0 6px #3b82f6aa;
+  background: #fff;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:active {
+  background: #1d4ed8;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2563ebaa;
+}

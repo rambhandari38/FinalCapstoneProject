@@ -1,0 +1,96 @@
+.skill-detail-page {
+  background-color: #f2f7fd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+.skill-detail-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.skill-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.back-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-btn {
+  padding: 8px 16px;
+  background-color: #0057ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.skill-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.progress-section {
+  margin-top: 32px;
+}
+
+.progress-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  background-color: #d3dce4;
+  border-radius: 10px;
+  height: 12px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.progress-fill {
+  background-color: #0057ff;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.topics-section {
+  margin-top: 40px;
+}
+
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.topics-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.topics-list input[type="checkbox"] {
+  margin-right: 10px;
+}

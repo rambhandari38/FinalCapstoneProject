@@ -1,0 +1,82 @@
+.schedule-page {
+  background-color: #f2f7fd;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin-right: 200px;
+}
+
+.schedule-container {
+  max-width: 800px;
+  margin: 0 ;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.schedule-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a237e;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.schedule-day {
+  background-color: #eaf2ff;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border: 1px solid #c6d8f7;
+}
+
+.schedule-day:hover {
+  transform: translateY(-4px);
+  background-color: #dceeff;
+}
+
+.schedule-day h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #0d47a1;
+}
+
+.class-card {
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.class-card:hover {
+  border-left: 4px solid #2196f3;
+  background-color: #f0f8ff;
+}
+
+.class-card .time {
+  font-weight: bold;
+  color: #2b3d74;
+  display: block;
+}
+
+.class-card .subject {
+  display: block;
+  margin-top: 4px;
+  color: #333;
+}
+
+.class-card .location {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2px;
+}
