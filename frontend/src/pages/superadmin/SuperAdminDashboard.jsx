@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import API from "../api";  // your axios instance with baseURL and token interceptors
+import API from "../../api";  // your axios instance with baseURL and token interceptors
 // import "./SuperAdminDashboard.css";
 
 

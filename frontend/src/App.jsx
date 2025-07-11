@@ -2,24 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import Login from "./pages/Login";
-import SuperAdminDashboard from "./pages/SuperAdminDashboard";
-import TeacherDashboard from "./pages/TeacherDashboard";
-import StudentDashboard from "./pages/StudentDashboard";
+import Login from "./pages/login/Login";
+import SuperAdminDashboard from "./pages/superadmin/SuperAdminDashboard";
+import TeacherDashboard from "./pages/teacher/TeacherDashboard";
+import StudentDashboard from "./pages/student/StudentDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-// Admin section
-// import AdminLayout from "./pages/frontend/Admin/MainLayout";
-// import AdminDashboard from "./pages/frontend/Admin/Dashboard";
-// import Dashboard from "./pages/frontend/Admin/Dashboard";
 import AdminTest from "./pages/AdminTest";
-// import Courses from "./pages/frontend/Student/MyCourses";
-// import Assignments from "./pages/frontend/Student/Assignments";
-// import Settings from "./pages/frontend/Student/Settings";
-// import Skills from "./pages/frontend/Student/Skills";
-// import SkillProgressDetail from "./pages/frontend/Student/SkillProgressDetail";
-// import StudyGroups from "./pages/frontend/Student/StudyGroups";
-// import Schedule from "./pages/frontend/Student/Schedule";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -96,18 +85,6 @@ function App() {
           </ProtectedRoute>
         }
       />
-
-      {/* <Route
-        path="/admin/*"
-        element={
-          <ProtectedRoute user={user} allowedRoles={["admin"]}>
-            <AdminLayout user={user} logout={handleLogout} />
-          </ProtectedRoute>
-        }
-      >
-        <Route index element={<AdminDashboard user={user} />} />
-        <Route path="dashboard" element={<Dashboard />} />
-      </Route> */}
 
       <Route
         path="/teacher"

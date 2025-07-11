@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import API from "../api"; // Make sure this path is correct
+import API from "../../api"; // Make sure this path is correct
 import "./StudentDashboard.css";
-import Socket from "./Socket"; // ✅ adjust path if needed
+import Socket from "../Socket"; // ✅ adjust path if needed
 
 
 export default function StudentDashboard({ user, logout }) {
